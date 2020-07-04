@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                width: 500px;
+                height: 500px;
+                margin: 20px;
+                text-align: center;
+                color: white;
+            }
+
+            tr:nth-child(2n - 1) > td:nth-child(2n - 1) {
+                background-color: black;
+            }
+
+            tr:nth-child(2n) > td:nth-child(2n) {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <script>
+                for (i = 0;i < 5;i++) {
+                    document.write("<tr>");
+                    for (j = 0;j < 5;j++) {
+                        document.write("<td>XX</td>");
+                    }
+                    document.write("</tr>")
+                }
+            </script>
+        </table>
+    </body>
+</html>
